@@ -1,7 +1,6 @@
-# GSDensity_manuscript_code
-
 [![DOI](https://zenodo.org/badge/628142331.svg)](https://zenodo.org/doi/10.5281/zenodo.10162752)
 
+# GSDensity_manuscript_code
 
 ## Simulation scRNA-seq data with SERGIO
 
