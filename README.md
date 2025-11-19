@@ -2,41 +2,45 @@
 
 [![DOI](https://zenodo.org/badge/628142331.svg)](https://zenodo.org/doi/10.5281/zenodo.10162752)
 
-Simulation scRNA-seq data with SERGIO:
-sergio_steady_gen.R: generate SERGIO input file (steady state mode)
 
-run_sergio_code.py: run SERGIO (steady state mode)
+## Simulation scRNA-seq data with SERGIO
 
-sergio_dyn_gen.R: generate SERGIO input file (dynamic state mode)
+`sergio_steady_gen.R`: generate SERGIO input file (steady state mode)
 
-run_sergio_dyn.1.py: run SERGIO(dynamic mode only)
+`run_sergio_code.py`: run SERGIO (steady state mode)
 
-normalize_sim_rand.R: combine random gene matrix with simulated gene matrix (only dynamic mode)
+`sergio_dyn_gen.R`: generate SERGIO input file (dynamic state mode)
 
-bMat_cID7.tab; bMat_cID10.mod.tab: cell state migration file for dynamic modes
+`run_sergio_dyn.1.py`: run SERGIO(dynamic mode only)
 
-Add_noise_to_data.ipynb: add noise to simulated data
+`normalize_sim_rand.R`: combine random gene matrix with simulated gene matrix (only dynamic mode)
 
-sergio_analysis_functions.R; method.benchmarking.functions.R: a set of functions for simulated data benchmarking; 
-data.sum <- benchmark.sergio(design = "5000.gene.3ct", version.n = 1, drop.out = "dp1", 
+`bMat_cID7.tab`; `bMat_cID10.mod.tab`: cell state migration file for dynamic modes
+
+`Add_noise_to_data.ipynb`: add noise to simulated data
+
+`sergio_analysis_functions.R`; `method.benchmarking.functions.R`: a set of functions for simulated data benchmarking
+
+    data.sum <- benchmark.sergio(design = "5000.gene.3ct", version.n = 1, drop.out = "dp1", 
                              n.cell.types = 3, n.cells.per.type = 1500, n.genes = 5000)
 
 
 
-Real world RNA-seq data:
-curate_data.R: curation of real-world datasets and markers
+## Real world RNA-seq data
 
-Cell_marker_Mouse.xlsx; Cell_marker_Human.xlsx; st4.csv; PanglaoDB_markers_27_Mar_2020.tsv.gz: markers
+`curate_data.R`: curation of real-world datasets and markers
 
-method.benchmarking.functions.rd.R: a set of functions for real world data benchmarking; 
-  run benchmark.real(fname = "pbmc3k") with "pbmc3k.rds" and "pbmc3k.markers.rds" in the dir.
+`Cell_marker_Mouse.xlsx`; `Cell_marker_Human.xlsx`; `st4.csv`; `PanglaoDB_markers_27_Mar_2020.tsv.gz`: markers
 
-Applications:
+`method.benchmarking.functions.rd.R`: a set of functions for real world data benchmarking; 
+  run `benchmark.real(fname = "pbmc3k")` with "pbmc3k.rds" and "pbmc3k.markers.rds" in the dir.
 
-tnbc_preprocess.r; tnbc.subtype.cc.R: processing tnbc data and run cellchat
+## Applications
 
-mb.r: mouse brain spatial
+`tnbc_preprocess.r`; `tnbc.subtype.cc.R`: processing tnbc data and run cellchat
 
-mouse_brain_dev.r: mouse brain development
+`mb.r`: mouse brain spatial
 
-panc.preprocess.R; panc.process.R: cancer visium data analysis
+`mouse_brain_dev.r`: mouse brain development
+
+`panc.preprocess.R`; `panc.process.R`: cancer visium data analysis
